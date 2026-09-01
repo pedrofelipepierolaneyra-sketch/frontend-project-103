@@ -1,0 +1,22 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "[![hexlet-check](https://github.com/pedrofelipepierolaneyra-sketch/frontend-project-103/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/pedrofelipepierolaneyra-sketch/frontend-project-103/actions)",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^15.0.0",
+    "lodash": "^4.18.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.9.1",
+    "globals": "^17.12.0",
+    "vitest": "^4.1.11"
+  }
+}
