@@ -2,6 +2,8 @@
 
 [![hexlet-check](https://github.com/pedrofelipepierolaneyra-sketch/frontend-project-103/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/pedrofelipepierolaneyra-sketch/frontend-project-103/actions)
 
+[![Tests](https://github.com/pedrofelipepierolaneyra-sketch/frontend-project-103/actions/workflows/tests.yml/badge.svg)](https://github.com/pedrofelipepierolaneyra-sketch/frontend-project-103/actions)
+
 Aprenderás a crear aplicaciones de línea de comandos (CLI), analizar y formatear datos en JSON y YAML. Además, explorarás el diseño de la arquitectura de aplicaciones y la escritura de pruebas unitarias.
 
 Proyecto de aprendizaje de Códica: https://app.codica.la/programs/frontend
