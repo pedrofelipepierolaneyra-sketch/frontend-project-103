@@ -1,9 +1,13 @@
 import _ from 'lodash';
+import parse from './parsers.js';
 
-const genDiff = (data1, data2) => {
-    const keys = _.sortBy(
-        [...new Set([...Object.keys(data1), ...Object.keys(data2)])],
-      );
+const genDiff = (filepath1, filepath2) => {
+  const data1 = parse(filepath1);
+  const data2 = parse(filepath2);
+
+  const keys = _.sortBy(
+    [...new Set([...Object.keys(data1), ...Object.keys(data2)])],
+  );
 
   const lines = keys.map((key) => {
     const hasData1 = Object.hasOwn(data1, key);
