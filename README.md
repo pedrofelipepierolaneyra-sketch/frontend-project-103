@@ -8,6 +8,7 @@ Aprenderás a crear aplicaciones de línea de comandos (CLI), analizar y formate
 
 Proyecto de aprendizaje de Códica: https://app.codica.la/programs/frontend
 Así debería funcionar: https://asciinema.org/a/UgXG08ve7bbcEubv
+Salida en formato JSON: https://asciinema.org/a/xZAeBFs0faJ7UVZP
 
 ## Stack
 
