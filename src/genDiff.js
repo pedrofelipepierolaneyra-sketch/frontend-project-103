@@ -1,34 +1,18 @@
-import _ from 'lodash';
 import parse from './parsers.js';
+import buildDiff from './buildDiff.js';
+import stylish from './formatters/stylish.js';
 
-const genDiff = (filepath1, filepath2) => {
+const genDiff = (filepath1, filepath2, format = 'stylish') => {
   const data1 = parse(filepath1);
   const data2 = parse(filepath2);
 
-  const keys = _.sortBy(
-    [...new Set([...Object.keys(data1), ...Object.keys(data2)])],
-  );
+  const diff = buildDiff(data1, data2);
 
-  const lines = keys.map((key) => {
-    const hasData1 = Object.hasOwn(data1, key);
-    const hasData2 = Object.hasOwn(data2, key);
+  if (format === 'stylish') {
+    return `{\n${stylish(diff)}\n}`;
+  }
 
-    if (hasData1 && hasData2) {
-      if (data1[key] === data2[key]) {
-        return `    ${key}: ${data1[key]}`;
-      }
-
-      return `  - ${key}: ${data1[key]}\n  + ${key}: ${data2[key]}`;
-    }
-
-    if (hasData1) {
-      return `  - ${key}: ${data1[key]}`;
-    }
-
-    return `  + ${key}: ${data2[key]}`;
-  });
-
-  return `{\n${lines.join('\n')}\n}`;
+  throw new Error(`Unknown format: ${format}`);
 };
 
 export default genDiff;
