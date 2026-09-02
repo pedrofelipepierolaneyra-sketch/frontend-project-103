@@ -14,6 +14,7 @@ const stringify = (value, depth) => {
   
   const stylish = (diff, depth = 0) => {
     const indent = ' '.repeat(depth * 4);
+  
     const lines = diff.map((node) => {
       const key = node.key;
   
@@ -41,7 +42,13 @@ const stringify = (value, depth) => {
       }
     });
   
-    return lines.join('\n');
+    const result = lines.join('\n');
+  
+    if (depth === 0) {
+      return `{\n${result}\n}`;
+    }
+  
+    return result;
   };
   
   export default stylish;
