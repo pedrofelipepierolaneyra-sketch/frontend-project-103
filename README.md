@@ -7,7 +7,7 @@
 Aprenderás a crear aplicaciones de línea de comandos (CLI), analizar y formatear datos en JSON y YAML. Además, explorarás el diseño de la arquitectura de aplicaciones y la escritura de pruebas unitarias.
 
 Proyecto de aprendizaje de Códica: https://app.codica.la/programs/frontend
-Así debería funcionar: https://asciinema.org/a/z0vv96mokwDzaUjy
+Así debería funcionar: https://asciinema.org/a/UgXG08ve7bbcEubv
 
 ## Stack
 
